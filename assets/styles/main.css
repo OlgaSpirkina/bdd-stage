@@ -1,0 +1,82 @@
+/* le thème sombre ou claire appliquée sur le body et est appeller par la fonction js */
+[data-theme="light"]{
+  --headingBackground: #ffbb66;
+  --textColor: #000;
+  --tableColor: #000;
+  --tableBackground: #dad9d7;
+  --tableHeading:rgba(205, 164, 52, .8);
+  --tableHover: #fff;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+fieldset{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+  margin: 1rem;
+  border: 2px solid var(--headingBackground);
+  border-radius: 1.5rem;
+}
+p > label{
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  height: 2rem;
+  border: 1px solid var(--headingBackground);
+  border-radius: .3rem;
+}
+button{
+  width: 7vw;
+  padding: .8rem;
+  background-color: var(--tableBackground);
+  margin: 0 auto;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+h1, h2, h3{
+  background-color: var(--headingBackground);
+  border-radius: .5rem;
+  color: #fff;
+  width: 30vw;
+  margin: 2rem;
+  padding: 0.2rem;
+}
+table{
+  width: 70vw;
+  margin: 2rem auto;
+  border: .1rem solid var(--tableHeading);
+  border-radius: .2rem;
+}
+th{
+  background-color: var(--tableHeading);
+  color: #fff;
+  font-weight: bolder;
+  padding: .1rem 1.2rem;
+  vertical-align: middle;
+}
+td{
+  background-color: var(--tableBackground);
+  color: var(--tableColor);
+  font-size: 1rem;
+  padding: .1rem 1.2rem;
+  border: 1px solid #fff;
+}
+td:hover{
+background-color: var(--tableHeading);
+color: var(--tableHover);
+}
+div{
+  display: flex;
+  justify-content: center;
+}
+header{
+  margin: 1rem;
+}
+small{
+  margin: 2rem;
+
+}
